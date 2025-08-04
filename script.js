@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Home page loaded: KeyHaven is live.");
+<<<<<<< HEAD
 
     // ✅ Ping backend
     fetch('http://localhost:5001/api/ping')
@@ -10,6 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
       .catch(err => {
         console.error('❌ Frontend could NOT connect to backend:', err);
       });
+=======
+>>>>>>> b3a901d83e59a1a00c6771ba562f70abc3229eac
 });
 const quotes = [
     "You are stronger than you think.",
@@ -30,6 +33,7 @@ function generateQuote() {
 
 function saveJournal() {
     const entry = document.getElementById("journalEntry").value;
+ HEAD
 
     if (entry.trim() !== "") {
         fetch('http://localhost:5001/api/journal', {
@@ -49,6 +53,13 @@ function saveJournal() {
         });
     } else {
         document.getElementById("savedMessage").textContent = "⚠️ Please write something first.";
+
+    if (entry.trim() !== "") {
+        localStorage.setItem("myJournalEntry", entry);
+        document.getElementById("savedMessage").textContent = "Journal entry saved!";
+    } else {
+        document.getElementById("savedMessage").textContent = "Please write something first.";
+ b3a901d83e59a1a00c6771ba562f70abc3229eac
     }
 }
 
@@ -86,4 +97,7 @@ function analyzeFeeling() {
 
     responseBox.textContent = response;
 }
+ HEAD
 
+
+ b3a901d83e59a1a00c6771ba562f70abc3229eac

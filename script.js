@@ -1,3 +1,6 @@
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Home page loaded: KeyHaven is live.");
+});
 const quotes = [
     "You are stronger than you think.",
     "It's okay to not be okay.",

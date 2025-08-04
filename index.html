@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Support</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Mental Wellness Space 🌿</h1>
+        <p>Your daily dose of positivity, care, and calm</p>
+        <header>
+    <div class="logo-title">
+        <span class="logo">💚</span>
+        <h1>Mental Wellness Space</h1>
+    </div>
+    <p>Your daily dose of positivity, care, and calm</p>
+</header>
+
+    </header>
+
+    <!-- Positive Thoughts -->
+    <section id="positive-thoughts">
+        <h2>🌟 Positive Quote</h2>
+        <p id="quote">Loading quote...</p>
+        <button onclick="generateQuote()">Another Quote</button>
+    </section>
+
+    <!-- Daily Tips -->
+    <section id="daily-tips">
+        <h2>🍀 Daily Wellness Tips</h2>
+        <ul>
+            <li>🚶‍♀️ Take a 15-minute walk</li>
+            <li>💧 Drink at least 2L of water</li>
+            <li>📴 Take a 10-minute screen break</li>
+            <li>😴 Sleep 7-8 hours a night</li>
+            <li>🧘‍♀️ Try 5 minutes of deep breathing</li>
+        </ul>
+    </section>
+
+    <!-- Music -->
+    <section id="music">
+        <h2>🎵 Relaxing Music</h2>
+        <p>Listen to calming sounds or music:</p>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=2OEL4P1Rz04" target="_blank">Peaceful Piano - YouTube</a></li>
+            <li><a href="https://www.youtube.com/watch?v=5DiMoehAeOU" target="_blank">Rain Sounds for Sleep</a></li>
+            <li><a href="https://www.youtube.com/watch?v=iqzHsKv-1yU" target="_blank">Calm Guitar Instrumentals</a></li>
+        </ul>
+    </section>
+
+    <!-- Journal -->
+    <section id="journal">
+        <h2>📓 Your Journal</h2>
+        <textarea id="journalEntry" placeholder="Write how you're feeling..."></textarea><br>
+        <button onclick="saveJournal()">Save Entry</button>
+        <p id="savedMessage"></p>
+    </section>
+
+    <!-- Coping Tips -->
+    <section id="coping-tips">
+        <h2>💡 Coping Tips</h2>
+        <ul>
+            <li>Take deep breaths for a few minutes</li>
+            <li>Call or message a friend</li>
+            <li>Try progressive muscle relaxation</li>
+            <li>Listen to music that makes you feel good</li>
+        </ul>
+    </section>
+
+    <!-- Solutions -->
+    <section id="solutions">
+        <h2>🧩 Simple Solutions to Common Feelings</h2>
+        <p><strong>Feeling anxious?</strong> Try grounding exercises like "5 things you see, 4 things you feel, 3 you hear..."</p>
+        <p><strong>Feeling sad?</strong> Go outside for fresh air and journal your feelings.</p>
+        <p><strong>Feeling tired?</strong> Drink water, stretch, or take a short nap.</p>
+        <p><strong>Feeling overwhelmed?</strong> Write a to-do list and prioritize just one task.</p>
+    </section>
+    <section id="feelings-support">
+    <h2>💬 Talk to Us</h2>
+    <p>If you're not feeling okay, let us know below and we'll try to help.</p>
+    <textarea id="feelingInput" placeholder="Type how you're feeling..."></textarea><br>
+    <button onclick="analyzeFeeling()">Get Support</button>
+    <div id="feelingResponse"></div>
+</section>
+
+
+    <footer>
+        <p>Need Help? <a href="https://www.who.int/campaigns/world-mental-health-day" target="_blank">Visit WHO Mental Health Resources</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
